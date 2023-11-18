@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  color: antiquewhite;
+  font-size: 3rem;
+}
+.panel1 {
+  background-image: url(./images/neom-4q87Z96NBYg-unsplash.jpg);
+}
+.panel2 {
+  background-image: url(./images/neom-Iy59i0M7oP4-unsplash.jpg);
+}
+.panel3 {
+  background-image: url(./images/neom-s3leOixsIX0-unsplash.jpg);
+}
+.panel4 {
+  background-image: url(./images/neom-THlO6Mkf5uI-unsplash.jpg);
+}
+.panel5 {
+  background-image: url(./images/neom-XDtzu1D2P8c-unsplash.jpg);
+}
+.panel6 {
+  background-image: url(./images/neom-YeLs9lJDx9M-unsplash.jpg);
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: flex 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    background 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.panel:hover {
+  flex: 5;
+}
+.panel p {
+  transition: top 0.7s 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hidden {
+  position: relative;
+  top: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  min-width: 100%;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
